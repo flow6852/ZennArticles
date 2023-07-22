@@ -60,6 +60,8 @@ https://zenn.dev/shougo/articles/ddu-vim-make-plugins
 
 開発者はsourceの各itemについて実現したいことを書くだけです．実際に本拡張pluginの`setcmdline`アクションはユーザが指定したitemをコマンドラインにコピーしています．previewもcontentsに値を渡しているだけです．
 
+既存のsourceを使ってkindを試験したい場合は`ddu-filter-converter_kind`を用いると楽です．
+https://github.com/flow6852/ddu-filter-converter_kind
 
 ## kind開発時に考えるべき”でない”こと
 
