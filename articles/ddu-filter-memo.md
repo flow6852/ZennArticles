@@ -37,7 +37,7 @@ https://github.com/Shougo/ddu.vim
 動機は以下の3つです
 
 1. `ddu-source-url`のkindの候補として`ddu-kind-file`と`ddu-kind-url`があるが、ユーザがkindを変更するのが大変
-1. 前回の記事を書いたとき「kindだけを試作したい人はsourceを一緒につくるか既存のsourceのkindをかきかえるかしかなさそうだけどユーザーがやることじゃなさそう」
+1. kindだけを試作したい人はsourceを一緒につくるか既存のsourceのkindをかきかえるかしかなさそうだけどユーザーがやることじゃなさそう
 1. 前回の記事のネタがなかった
 
 ## 結果
