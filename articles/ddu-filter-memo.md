@@ -56,7 +56,7 @@ https://zenn.dev/shougo/articles/ddu-vim-make-plugins
 
 ### 生成後のitemで変更したいものを変える
 
-ddu.vim起動中にitemを選んで`echom ddu#get_item()`をした結果で変更したい要素を変更するだけです.
+ddu.vim起動中にitemを選んで`echom ddu#ui#get_item()`をした結果で変更したい要素を変更するだけです.
 `ddu-filter-converter_kind`では`kind`を変更し、`action`中の要素でコピーしたいものをコピーしています.
 
 ## まとめ
