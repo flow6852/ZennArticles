@@ -160,10 +160,10 @@ Kind=tap
 [Match]
 Name=hostbr0
 [Network]
-Address = 192.168.1.100/24
-DNS = 192.168.1.1
-DNS = 192.168.50.254
-Gateway = 192.168.1.1
+Address = (address)
+DNS = (address)
+DNS = (address)
+Gateway = (address)
 ```
 
 #### 52-kvm_rooter.network
@@ -216,7 +216,7 @@ method=ignore
 [proxy]
 ```
 
-### bridge-slave-enp4s0.nmconnection
+#### bridge-slave-enp4s0.nmconnection
 
 ```
 [connection]
