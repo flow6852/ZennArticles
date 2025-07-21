@@ -22,6 +22,12 @@ OSSを試したり構築の練習をするためにqemu+KVMで仮想マシンを
 ホスト側セグメントに影響を出さないようにするためには
 仮想マシン用のセグメントが欲しいと思い作っていました。
 
+## このドキュメントの記載方針について
+
+ネットワーク設定については記載すると長くなってしまうため、
+補足にconfigを記載し、
+configの方針を本文に記載しています。
+
 ## 実行環境
 
 |    構成要素    | 使用環境  |
@@ -29,10 +35,6 @@ OSSを試したり構築の練習をするためにqemu+KVMで仮想マシンを
 |   ディストロ   | ArchLinux |
 | ハイパーバイザ |    KVM    |
 |  エミュレータ  |   qemu    |
-
-## 構成図
-
-準備中
 
 ## 作成手順
 
@@ -105,6 +107,13 @@ qemu-system-x86_64 \
 ```
 
 ## まとめ
+
+## 参考文献
+
+
+* [インストールガイド](https://wiki.archlinux.jp/index.php/%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB%E3%82%AC%E3%82%A4%E3%83%89)
+* [23.17.8.8. マルチキャストトンネル](https://docs.redhat.com/ja/documentation/red_hat_enterprise_linux/7/html/virtualization_deployment_and_administration_guide/sect-manipulating_the_domain_xml-devices#sect-Network_interfaces-Multicast_tunnel)
+
 
 ## 補足: Network config
 
