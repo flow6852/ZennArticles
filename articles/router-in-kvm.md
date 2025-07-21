@@ -1,6 +1,7 @@
 ---
 title: "routerをKVMに立てる"
 published: true
+type: tech
 ---
 
 ## はじめに
