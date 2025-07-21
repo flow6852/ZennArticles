@@ -9,7 +9,8 @@ Linuxで作成した仮想routerを他ゲストとホストや同じセグメン
 
 :::message alert
 筆者はrouterのことをrooterと思いこんでネットワークデバイスを用意していました。
-戒めのため記事ではルーターをrouterと書いていますが、末尾のconfigではrooterとなっています。
+戒めのため記事ではルーターをrouterと書いていますが、
+コマンドやconfigではrooterとなっています。
 適宜読み替えてください。
 :::
 
