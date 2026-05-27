@@ -6,7 +6,6 @@ type: tech
 
 ## はじめに
 
-
 下記の続きです。
 
 https://zenn.dev/flow6852/articles/router-in-kvm
@@ -99,7 +98,9 @@ ansible-playbook site.yml
 
 ## 実装
 
-### tree
+ymlファイルをほぼそのまま貼り付けます。
+
+#### tree
 
 ```
 .
@@ -132,7 +133,7 @@ ansible-playbook site.yml
     └── inner.network
 ```
 
-### netbox.yml
+#### netbox.yml
 
 netboxのAPIを叩くところです。
 
@@ -154,7 +155,7 @@ inventory:
   plugin: netbox.netbox.nb_inventory
 ```
 
-### grouping.yml
+#### grouping.yml
 
 グループの階層構造を定義します。
 各グループに`group_vars`を定義でき、配下グループでも`group_vars`その利用できます。
@@ -181,7 +182,7 @@ all:
             targets_windows:
 ```
 
-### sites.yml
+#### sites.yml
 
 bootstrapです。
 
@@ -197,7 +198,7 @@ bootstrapです。
 - import_playbook: playbooks/windows_add_domain.yml
 ```
 
-### machine_existance_check.yml
+#### machine_existance_check.yml
 
 仮想マシンの存在確認をします。`delegate_to`で`kvm-host`を指定することで`inventory_hostname`を対象として維持しながらkvm-host上でコマンドを実行してくれます。
 
@@ -241,7 +242,7 @@ bootstrapです。
         msg: "{{groups['targets']}}"
 ```
 
-### create_virtmachines.yml 
+#### create_virtmachines.yml 
 
 仮想マシンをクローンします。
 
@@ -280,7 +281,7 @@ bootstrapです。
       loop: "{{ groups['targets_windows']}}"
 ```
 
-### machine_ip_change.yml
+#### machine_ip_change.yml
 
 仮想マシンのIPアドレスを変更します。
 `serial:1`を指定することでIPアドレスの衝突を回避しながら仮想マシンのIPアドレスを順次変更できます。
